@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#a80012">
+<title>Hi, I'm Vedanti | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="background-glow"></div>
+
+<header class="navbar">
+    <a href="#home" class="logo">V<span>.</span></a>
+
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+        <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Switch to Soft Blush theme">
+            🌸 Soft Blush
+        </button>
+
+        <a href="#contact" class="nav-button">Let's Connect ↗</a>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                <span class="status-dot"></span>
+                CYBERSECURITY • WEB DEVELOPMENT
+            </p>
+
+            <h1>
+                HI, I'M<br>
+                <span class="name">VEDANTI<span class="period">.</span></span>
+            </h1>
+
+            <h2>Curious mind. Creative coder.</h2>
+
+            <p class="hero-description">
+                I'm a Cybersecurity & Web Development Student
+                exploring technology, building useful projects,
+                and learning how to make the digital world safer.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="primary-button">
+                    Explore My Work ↗
+                </a>
+
+                <a href="#about" class="secondary-button">
+                    Get to Know Me
+                </a>
+            </div>
+
+            <div class="hero-footer">
+                <span>LEARNING. BUILDING. EVOLVING.</span>
+                <span>PORTFOLIO · 2026</span>
+            </div>
+
+        </div>
+
+        <div class="character-container" id="character-container">
+
+            <div class="character-orbit orbit-one"></div>
+            <div class="character-orbit orbit-two"></div>
+
+            <div class="character-label">
+                <span class="label-star">✳</span>
+                A LITTLE CREATIVITY<br>
+                GOES A LONG WAY
+            </div>
+
+            <!-- Cherry Noir character: existing interactive animation -->
+<canvas
+    class="character-canvas cherry-character"
+    id="character-canvas"
+    width="1280"
+    height="720"
+    aria-label="Interactive anime character">
+</canvas>
+
+<!-- Soft Blush character: new video -->
+<video
+    class="character-video blush-character"
+    id="light-character-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    aria-label="Animated anime character for Soft Blush theme">
+    <source src="Public/light-character.mp4" type="video/mp4">
+</video>
+
+<!-- Photo fallback for Soft Blush -->
+<img
+    class="character-photo blush-character"
+    id="light-character-photo"
+    src="Public/light-character.png"
+    alt="Anime character for Soft Blush theme">
+            <div class="character-caption">
+                <span>✦</span> THAT'S ME, IN MY DIGITAL WORLD
+            </div>
+
+        </div>
+
+        <a href="#about" class="scroll-indicator">
+            SCROLL TO EXPLORE <span>↓</span>
+        </a>
+
+    </section>
+
+    <section class="about-section" id="about">
+        <p class="section-label">01 / A LITTLE ABOUT ME</p>
+        <h2>Technology meets <span>curiosity.</span></h2>
+
+        <p>
+            I'm a student passionate about cybersecurity,
+            web development, and creating digital experiences.
+            I enjoy learning new skills and turning ideas into
+            projects that people can actually use.
+        </p>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <p class="section-label">02 / THINGS I'VE BUILT</p>
+        <h2>My little corner of <span>the internet.</span></h2>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+    <span class="project-number">PROJECT 01</span>
+
+    <h3>CyberSafe</h3>
+
+    <p>
+        A cybersecurity awareness web portal featuring
+        cyber threat information, safety tips, a password
+        checker, a phishing quiz, and user authentication.
+    </p>
+
+    <span class="project-tech">
+        HTML · CSS · JavaScript · PHP · MySQL
+    </span>
+
+    <div class="project-links">
+        <a
+            href="https://vedantinimje.github.io/cybersafe-web-portal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+        >
+            Live Demo ↗
+        </a>
+    </div>
+</article>
+
+           <article class="project-card">
+    <span class="project-number">PROJECT 02</span>
+
+    <h3>Digital Evidence Integrity Analyzer</h3>
+
+    <p>
+        A C++ project that uses SHA-256 hashing to
+        help check digital evidence integrity and
+        generate evidence reports.
+    </p>
+
+    <span class="project-tech">C++ · OpenSSL</span>
+
+    <div class="project-links">
+        <a
+            href="https://github.com/VedantiNimje/Digital-Evidence-Integrity-Analyzer"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+        >
+            View on GitHub ↗
+        </a>
+    </div>
+</article>
+
+            <article class="project-card">
+                <span class="project-number">PROJECT 03</span>
+                <h3>Deadline Buddy</h3>
+                <p>
+                    A student productivity app for organizing
+                    deadlines, tracking priorities, and managing
+                    completed and pending tasks.
+                </p>
+                <span class="project-tech">HTML · CSS · JavaScript</span>
+                <div class="project-links">
+    <a
+        href="https://vedantinimje.github.io/deadline-buddy/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-link"
+    >
+        Live Demo ↗
+    </a>
+</div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="contact-section" id="contact">
+        <p class="section-label">03 / SAY HELLO</p>
+        <h2>Let's build something <span>meaningful.</span></h2>
+        <p>Learning today. Creating better things tomorrow.</p>
+
+        <div class="contact-buttons">
+            <a href="https://github.com/VedantiNimje" id="github-link" class="primary-button">
+                GitHub ↗
+            </a>
+
+            <a href="https://www.linkedin.com/in/vedanti-nimje-61a725430/" id="linkedin-link" class="secondary-button">
+                LinkedIn ↗
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <span>MADE WITH CURIOSITY & ♡</span>
+    <span>© 2026 VEDANTI</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
